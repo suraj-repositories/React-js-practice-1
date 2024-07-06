@@ -1,0 +1,10 @@
+
+Condititional rendering : 
+    if defines to load the components based on the conditions
+        => by using ternery operator
+        => by using if else conditions
+    
+    one thing what i learn in this video : we can store the html to the variable directly in react
+
+    example: 
+        let myFooter = <footer> &copy; copyright 2024 all rights reserved! </footer>

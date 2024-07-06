@@ -1,0 +1,9 @@
+.cars-list{
+  list-style-type: square;
+}
+
+.cars-list li:hover{
+  cursor: pointer;
+  color: red;
+
+}

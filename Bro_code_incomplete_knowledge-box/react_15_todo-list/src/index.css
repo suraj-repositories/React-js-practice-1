@@ -1,0 +1,132 @@
+
+body{
+  background-color: hsla(0, 0%, 0%, 0.85);
+}
+
+.to-do-list{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.to-do-list h1{
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.add-btn{
+  font-size: 22px;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: hsl(138, 82%, 52%);
+  cursor: pointer;
+  margin: 0;
+}
+
+input[type="text"]{
+  padding: 10px;
+  margin: 0;
+  font-size: 20px;
+  border-color: hsla(240, 5%, 91%, 0.583);
+  color: rgba(0, 0, 0, 0.621);
+  margin-right: 5px;
+  width: 400px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+ol{
+  padding: 0;
+}
+
+.task-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+li{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 2px solid hsla(0, 0%, 76%, 0.343);
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.84);
+  width: 600px;
+}
+
+li span{
+  flex: 1;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+.delete-btn{
+  padding: 8px 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: hsla(0, 100%, 50%, 0.745);
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.delete-btn:hover{
+  background-color: hsla(0, 100%, 40%, 0.745);
+}
+
+.up-btn, .down-btn{
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  background-color: hsla(198, 100%, 57%, 0.938);
+}
+
+.up-btn:hover, .down-btn:hover{
+  background-color: hsla(198, 100%, 47%, 0.938);
+}
+
+@media screen and (max-width: 400px) {
+  .to-do-list{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    width: 350px;
+  }
+  input[type="text"]{
+    max-width: 250px;
+  }
+  .task-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  li{
+    width: 500px;
+  }
+}
+@media screen and (max-width: 524px) {
+  input[type="text"]{
+    width: 300px;
+  }
+
+  li{
+    width: 400px
+  }
+}

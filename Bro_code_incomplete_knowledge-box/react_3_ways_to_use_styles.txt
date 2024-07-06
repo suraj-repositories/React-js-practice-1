@@ -1,0 +1,34 @@
+
+ways to use style
+1. External
+2. Modules
+3. Inline
+
+External Style Sheets : 
+    a place where you can apply global styles for your whole application
+    pros : good for small applications
+    cons : may be not handy for large application where you have to face the naming conflix
+
+Modules Style Sheets : 
+    Modules says to arrage your componets within directory and in each direcotry you have one jsx componet and others are dedicated style sheets 
+    /Button/ : 
+                Button.jsx
+                Button.modules.css
+
+    under Button.modules.css
+        .button{
+            color: red;
+        }
+
+    how to use : 
+    import stylesObj from "./Button.modules.css"
+    <button className={stylesObj.button} >Click me</button>
+
+Inline Style sheets : 
+   use inline style sheets for those componets only who has minimal style sheets
+
+   create and object
+   let styles = {
+    color: red
+   }
+   <button style={styles} >Click me</button>

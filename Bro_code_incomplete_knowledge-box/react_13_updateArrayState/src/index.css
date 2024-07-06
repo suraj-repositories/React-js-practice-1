@@ -1,0 +1,9 @@
+.food-list li:hover{
+    cursor: pointer;
+    color: red;
+    
+}
+
+.food-list li{
+    list-style-type: square;
+}
